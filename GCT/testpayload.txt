@@ -1,0 +1,455 @@
+ const payload = [
+    {
+        "testName": "test01",
+        "type": "http-server",
+        "agents": [
+            {
+                "agentId": 5153
+            }
+        ],
+        "alertsEnabled": 0,
+        "description": "bulktest1desc",
+        "interval": 300,
+        "url": "www.google.com"
+    },
+    {
+        "testName": "test04",
+        "type": "bgp",
+        "alertsEnabled": 0,
+        "description": "testdescforbgp",
+        "interval": 300,
+        "alertRules": [
+            {
+                "ruleId": 4999993
+            }
+        ],
+        "groups": [
+            {
+                "groupId": 536106
+            }
+        ],
+        "includeCoveredPrefixes": 0,
+        "usePublicBgp": 0,
+        "bgpMeasurements": 0,
+        "continuousMode": 0,
+        "port": 443
+    },
+    {
+        "testName": "test02",
+        "type": "web-transactions",
+        "agents": [
+            {
+                "agentId": 5616
+            }
+        ],
+        "alertsEnabled": 0,
+        "description": "test",
+        "interval": 300,
+        "url": "www.google.com",
+        "alertRules": [
+            {
+                "ruleId": 4999993
+            }
+        ],
+        "groups": [
+            {
+                "groupId": 536106
+            }
+        ],
+        "sharedWithAccounts": [
+            {
+                "aid": 241026
+            }
+        ],
+        "authType": "NONE",
+        "bandwidthMeasurements": 0,
+        "contentRegex": "[x-y]",
+        "desiredStatusCode": 200,
+        "followRedirects": 0,
+        "httpTargetTime": 100,
+        "httpTimeLimit": 5,
+        "httpVersion": 2,
+        "includeHeaders": 1,
+        "mtuMeasurements": 0,
+        "networkMeasurements": 1,
+        "numPathTraces": 3,
+        "password": "test",
+        "pathTraceMode": "classic",
+        "probeMode": "AUTO",
+        "protocol": "TCP",
+        "sslVersionId": 0,
+        "subinterval": 60,
+        "targetTime": 1,
+        "timeLimit": 5,
+        "useNtlm": 0,
+        "userAgent": "abe",
+        "username": "test1",
+        "verifyCertificate": 1,
+        "blockDomains": "www.google1.com",
+        "disableScreenshot": 0,
+        "allowMicAndCamera": 1,
+        "allowGeolocation": 1,
+        "browserLanguage": "english",
+        "transactionScript": "import { By, Key, until } from 'selenium-webdriver'; import { driver, markers, credentials, downloads, transaction, test } from 'thousandeyes'; runScript(); async function runScript() { const settings = test.getSettings(); await driver.get(settings.url); await driver.takeScreenshot(); markers.start('SearchForWebdriver'); await driver.findElement(By.name('q')).sendKeys('webdriver', Key.RETURN); await driver.takeScreenshot(); markers.stop('SearchForWebdriver'); await driver.wait(until.titleIs('webdriver - Google Search'), 1000); await driver.takeScreenshot(); } ;"
+    },
+    {
+        "testName": "test03",
+        "type": "web-transactions",
+        "agents": [
+            {
+                "agentId": 5616
+            }
+        ],
+        "alertsEnabled": 0,
+        "description": "test",
+        "interval": 300,
+        "url": "www.google.com",
+        "alertRules": [
+            {
+                "ruleId": 4999993
+            }
+        ],
+        "groups": [
+            {
+                "groupId": 536106
+            }
+        ],
+        "sharedWithAccounts": [
+            {
+                "aid": 241026
+            }
+        ],
+        "authType": "NONE",
+        "bandwidthMeasurements": 0,
+        "contentRegex": "[x-y]",
+        "desiredStatusCode": 200,
+        "followRedirects": 0,
+        "httpTargetTime": 100,
+        "httpTimeLimit": 5,
+        "httpVersion": 2,
+        "includeHeaders": 1,
+        "mtuMeasurements": 0,
+        "networkMeasurements": 1,
+        "numPathTraces": 3,
+        "password": "test",
+        "pathTraceMode": "classic",
+        "probeMode": "AUTO",
+        "protocol": "TCP",
+        "sslVersionId": 0,
+        "subinterval": 60,
+        "targetTime": 1,
+        "timeLimit": 5,
+        "useNtlm": 0,
+        "userAgent": "abe",
+        "username": "test1",
+        "verifyCertificate": 1,
+        "blockDomains": "www.google1.com",
+        "disableScreenshot": 0,
+        "allowMicAndCamera": 1,
+        "allowGeolocation": 1,
+        "browserLanguage": "english",
+        "transactionScript": "import { By, Key, until } from 'selenium-webdriver'; import { driver, markers, credentials, downloads, transaction, test } from 'thousandeyes'; runScript(); async function runScript() { const settings = test.getSettings(); await driver.get(settings.url); await driver.takeScreenshot(); markers.start('SearchForWebdriver'); await driver.findElement(By.name('q')).sendKeys('webdriver', Key.RETURN); await driver.takeScreenshot(); markers.stop('SearchForWebdriver'); await driver.wait(until.titleIs('webdriver - Google Search'), 1000); await driver.takeScreenshot(); } ;"
+    }
+]
+
+
+
+const updatedpayload =[
+    {
+        "testName": "test01",
+        "type": "http-server",
+        "agents": [
+            {
+                "agentId": 5153
+            }
+        ],
+        "alertsEnabled": 0,
+        "description": "bulktest1desc",
+        "interval": 300,
+        "url": "www.google.com"
+    },
+    {
+        "testName": "test04",
+        "type": "bgp",
+        "alertsEnabled": 0,
+        "description": "testdescforbgp",
+        "interval": 300,
+        "alertRules": [
+            {
+                "ruleId": 4999993
+            }
+        ],
+        "groups": [
+            {
+                "groupId": 536106
+            }
+        ],
+        "includeCoveredPrefixes": 0,
+        "usePublicBgp": 0,
+        "bgpMeasurements": 0,
+        "continuousMode": 0,
+        "port": 443
+    },
+    {
+        "testName": "test05",
+        "type": "agent-to-server",
+        "agents": [
+            {
+                "agentId": 5616
+            }
+        ],
+        "alertsEnabled": 0,
+        "description": "testdescforbgp",
+        "interval": 600,
+        "alertRules": [
+            {
+                "ruleId": 4999993
+            }
+        ],
+        "groups": [
+            {
+                "groupId": 536106
+            }
+        ],
+        "sharedWithAccounts": [
+            {
+                "aid": 241026
+            }
+        ],
+        "mtuMeasurements": 0,
+        "networkMeasurements": 1,
+        "protocol": "PREFER_TCP",
+        "subinterval": -1,
+        "usePublicBgp": 0,
+        "bgpMeasurements": 0
+    },
+    {
+        "testName": "test06",
+        "type": "agent-to-agent",
+        "agents": [
+            {
+                "agentId": 5616
+            }
+        ],
+        "alertsEnabled": 0,
+        "description": "testdescforbgp",
+        "interval": 600,
+        "alertRules": [
+            {
+                "ruleId": 4999993
+            }
+        ],
+        "groups": [
+            {
+                "groupId": 536106
+            }
+        ],
+        "sharedWithAccounts": [
+            {
+                "aid": 241026
+            }
+        ],
+        "numPathTraces": 3,
+        "pathTraceMode": "inSession",
+        "protocol": "TCP",
+        "subinterval": -1,
+        "usePublicBgp": 1,
+        "bgpMeasurements": 0,
+        "continuousMode": 0,
+        "port": 49153,
+        "enabled": 0,
+        "liveShare": 0,
+        "targetAgentId": 60108
+    },
+    {
+        "testName": "test07",
+        "type": "dns-server",
+        "agents": [
+            {
+                "agentId": 5616
+            }
+        ],
+        "alertsEnabled": 0,
+        "description": "testdescforbgp",
+        "interval": 600,
+        "alertRules": [
+            {
+                "ruleId": 4999993
+            }
+        ],
+        "groups": [
+            {
+                "groupId": 536106
+            }
+        ],
+        "sharedWithAccounts": [
+            {
+                "aid": 241026
+            }
+        ],
+        "numPathTraces": 1,
+        "pathTraceMode": "inSession",
+        "probeMode": "AUTO",
+        "protocol": "TCP",
+        "dnsTransportProtocol": "UDP"
+    },
+    {
+        "testName": "test08",
+        "type": "page-load",
+        "agents": [
+            {
+                "agentId": 5616
+            }
+        ],
+        "alertsEnabled": 0,
+        "description": "testdescforbgp",
+        "interval": 300,
+        "alertRules": [
+            {
+                "ruleId": 4999993
+            }
+        ],
+        "groups": [
+            {
+                "groupId": 536106
+            }
+        ],
+        "sharedWithAccounts": [
+            {
+                "aid": 241026
+            }
+        ],
+        "authType": "NONE",
+        "bandwidthMeasurements": 0,
+        "httpTargetTime": 100,
+        "httpTimeLimit": 5,
+        "httpVersion": 2,
+        "includeHeaders": 0,
+        "mtuMeasurements": 0,
+        "networkMeasurements": 0,
+        "numPathTraces": 3,
+        "password": "test",
+        "pathTraceMode": "classic",
+        "probeMode": "AUTO",
+        "protocol": "TCP",
+        "pageLoadingStrategy": "none",
+        "bgpMeasurements": 0,
+        "httpInterval": 900
+    },
+    {
+        "testName": "test02",
+        "type": "web-transactions",
+        "agents": [
+            {
+                "agentId": 5616
+            }
+        ],
+        "alertsEnabled": 0,
+        "description": "test",
+        "interval": 300,
+        "url": "www.google.com",
+        "alertRules": [
+            {
+                "ruleId": 4999993
+            }
+        ],
+        "groups": [
+            {
+                "groupId": 536106
+            }
+        ],
+        "sharedWithAccounts": [
+            {
+                "aid": 241026
+            }
+        ],
+        "authType": "NONE",
+        "bandwidthMeasurements": 0,
+        "contentRegex": "[x-y]",
+        "desiredStatusCode": 200,
+        "followRedirects": 0,
+        "httpTargetTime": 100,
+        "httpTimeLimit": 5,
+        "httpVersion": 2,
+        "includeHeaders": 1,
+        "mtuMeasurements": 0,
+        "networkMeasurements": 1,
+        "numPathTraces": 3,
+        "password": "test",
+        "pathTraceMode": "classic",
+        "probeMode": "AUTO",
+        "protocol": "TCP",
+        "sslVersionId": 0,
+        "subinterval": 60,
+        "targetTime": 1,
+        "timeLimit": 5,
+        "useNtlm": 0,
+        "userAgent": "abe",
+        "username": "test1",
+        "verifyCertificate": 1,
+        "blockDomains": "www.google1.com",
+        "disableScreenshot": 0,
+        "allowMicAndCamera": 1,
+        "allowGeolocation": 1,
+        "browserLanguage": "english",
+        "transactionScript": "import { By, Key, until } from 'selenium-webdriver'; import { driver, markers, credentials, downloads, transaction, test } from 'thousandeyes'; runScript(); async function runScript() { const settings = test.getSettings(); await driver.get(settings.url); await driver.takeScreenshot(); markers.start('SearchForWebdriver'); await driver.findElement(By.name('q')).sendKeys('webdriver', Key.RETURN); await driver.takeScreenshot(); markers.stop('SearchForWebdriver'); await driver.wait(until.titleIs('webdriver - Google Search'), 1000); await driver.takeScreenshot(); } ;"
+    },
+    {
+        "testName": "test03",
+        "type": "web-transactions",
+        "agents": [
+            {
+                "agentId": 5616
+            }
+        ],
+        "alertsEnabled": 0,
+        "description": "test",
+        "interval": 300,
+        "url": "www.google.com",
+        "alertRules": [
+            {
+                "ruleId": 4999993
+            }
+        ],
+        "groups": [
+            {
+                "groupId": 536106
+            }
+        ],
+        "sharedWithAccounts": [
+            {
+                "aid": 241026
+            }
+        ],
+        "authType": "NONE",
+        "bandwidthMeasurements": 0,
+        "contentRegex": "[x-y]",
+        "desiredStatusCode": 200,
+        "followRedirects": 0,
+        "httpTargetTime": 100,
+        "httpTimeLimit": 5,
+        "httpVersion": 2,
+        "includeHeaders": 1,
+        "mtuMeasurements": 0,
+        "networkMeasurements": 1,
+        "numPathTraces": 3,
+        "password": "test",
+        "pathTraceMode": "classic",
+        "probeMode": "AUTO",
+        "protocol": "TCP",
+        "sslVersionId": 0,
+        "subinterval": 60,
+        "targetTime": 1,
+        "timeLimit": 5,
+        "useNtlm": 0,
+        "userAgent": "abe",
+        "username": "test1",
+        "verifyCertificate": 1,
+        "blockDomains": "www.google1.com",
+        "disableScreenshot": 0,
+        "allowMicAndCamera": 1,
+        "allowGeolocation": 1,
+        "browserLanguage": "english",
+        "transactionScript": "import { By, Key, until } from 'selenium-webdriver'; import { driver, markers, credentials, downloads, transaction, test } from 'thousandeyes'; runScript(); async function runScript() { const settings = test.getSettings(); await driver.get(settings.url); await driver.takeScreenshot(); markers.start('SearchForWebdriver'); await driver.findElement(By.name('q')).sendKeys('webdriver', Key.RETURN); await driver.takeScreenshot(); markers.stop('SearchForWebdriver'); await driver.wait(until.titleIs('webdriver - Google Search'), 1000); await driver.takeScreenshot(); } ;"
+    }
+]
